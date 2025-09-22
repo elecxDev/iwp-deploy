@@ -99,7 +99,7 @@ export default function StudentDashboard() {
     }
   }
 
-  const TabButton = ({ id, label, icon: Icon }: { id: string, label: string, icon: any }) => (
+  const TabButton = ({ id, label, icon: Icon }: { id: string; label: string; icon: React.ComponentType<{ className?: string }> }) => (
     <button
       onClick={() => setSelectedTab(id)}
       className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-colors ${
